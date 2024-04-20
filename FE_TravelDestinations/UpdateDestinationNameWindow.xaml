@@ -1,0 +1,23 @@
+﻿<Window x:Class="FE_TravelDestinations.UpdateDestinationNameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FE_TravelDestinations"
+        mc:Ignorable="d"
+        Title="UpdateDestinationNameWindow" Height="450" Width="800">
+    <Grid Background="Pink">
+        <StackPanel Margin="10">
+            <Label Content="Update destination name"  FontWeight="Bold" HorizontalContentAlignment="Center"/>
+
+            <Label Content="Destinations:" FontWeight="Bold" HorizontalContentAlignment="Center"  />
+            <Label Content="Select destination:" FontWeight="Bold"/>
+            <ComboBox x:Name="destinationsComboBox" DisplayMemberPath="Title" />
+
+
+            <Label Content="New destination name:" FontWeight="Bold"/>
+            <TextBox x:Name="newNameTextBox" Height="20" Width="773"/>
+            <Button Content="Update destination name" Width="273" Click="UpdateDestinationName_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
